@@ -6,7 +6,7 @@
 "modbus_module\enc28j60.o"
 "modbus_module\ethernetif.o"
 "modbus_module\main.o"
-"modbus_module\tcp_echoserver.o"
+"modbus_module\modbus_client.o"
 "modbus_module\stm32f1xx_hal_gpio_ex.o"
 "modbus_module\stm32f1xx_hal_spi.o"
 "modbus_module\stm32f1xx_hal_spi_ex.o"

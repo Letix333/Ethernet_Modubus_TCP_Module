@@ -2,7 +2,7 @@ Dependencies for Project 'modbus_module', Target 'modbus_module': (DO NOT MODIFY
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
 F (startup_stm32f103xe.s)(0x5E0F778A)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_modbus_module-ID:\Keil\Package\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil\Package\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "STM32F10X_HD SETA 1"--list startup_stm32f103xe.lst --xref -o modbus_module\startup_stm32f103xe.o --depend modbus_module\startup_stm32f103xe.d)
 F (../Src/stm32f1xx_it.c)(0x5E2B2ACA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\LwIP\system -I ..\LwIP\system\arch -I ..\LwIP\src\include -I ..\LwIP\src\include\ipv4 -I ..\LwIP\src\include\lwip -I ..\LwIP\src\include\netif -I ..\LwIP\src\include\posix -I ..\LwIP\src\include\posix\sys -I ..\LwIP\src\core-I.\RTE\_modbus_module-ID:\Keil\Package\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil\Package\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o modbus_module\stm32f1xx_it.o --omf_browse modbus_module\stm32f1xx_it.crf --depend modbus_module\stm32f1xx_it.d)
-I (../Inc/main.h)(0x5E332843)
+I (../Inc/main.h)(0x5E39B8AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5DD18420)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5E276C2E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5DD18420)
@@ -53,10 +53,11 @@ I (..\LwIP\src\include\lwip/lwip_timers.h)(0x5DD19F40)
 I (D:\Keil\ARM\ARMCC\include\inttypes.h)(0x5D9B3488)
 I (../Inc/app_ethernet.h)(0x5DD19F5A)
 I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (../Inc/tcp_echoserver.h)(0x5E33363B)
+I (../Inc/modbus_client.h)(0x5E33363B)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x5D9B3488)
 I (../Inc/stm32f1xx_it.h)(0x5DD189C2)
 F (../Src/stm32f1xx_hal_msp.c)(0x5E14E8F8)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\LwIP\system -I ..\LwIP\system\arch -I ..\LwIP\src\include -I ..\LwIP\src\include\ipv4 -I ..\LwIP\src\include\lwip -I ..\LwIP\src\include\netif -I ..\LwIP\src\include\posix -I ..\LwIP\src\include\posix\sys -I ..\LwIP\src\core-I.\RTE\_modbus_module-ID:\Keil\Package\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil\Package\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o modbus_module\stm32f1xx_hal_msp.o --omf_browse modbus_module\stm32f1xx_hal_msp.crf --depend modbus_module\stm32f1xx_hal_msp.d)
-I (../Inc/main.h)(0x5E332843)
+I (../Inc/main.h)(0x5E39B8AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5DD18420)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5E276C2E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5DD18420)
@@ -107,7 +108,8 @@ I (..\LwIP\src\include\lwip/lwip_timers.h)(0x5DD19F40)
 I (D:\Keil\ARM\ARMCC\include\inttypes.h)(0x5D9B3488)
 I (../Inc/app_ethernet.h)(0x5DD19F5A)
 I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (../Inc/tcp_echoserver.h)(0x5E33363B)
+I (../Inc/modbus_client.h)(0x5E33363B)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x5D9B3488)
 F (..\Src\app_ethernet.c)(0x5E2B28B6)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\LwIP\system -I ..\LwIP\system\arch -I ..\LwIP\src\include -I ..\LwIP\src\include\ipv4 -I ..\LwIP\src\include\lwip -I ..\LwIP\src\include\netif -I ..\LwIP\src\include\posix -I ..\LwIP\src\include\posix\sys -I ..\LwIP\src\core-I.\RTE\_modbus_module-ID:\Keil\Package\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil\Package\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o modbus_module\app_ethernet.o --omf_browse modbus_module\app_ethernet.crf --depend modbus_module\app_ethernet.d)
 I (..\LwIP\src\include\lwip/opt.h)(0x5DD19F40)
 I (../Inc/lwipopts.h)(0x5E0FA486)
@@ -115,7 +117,7 @@ I (..\LwIP\src\include\lwip/debug.h)(0x5DD19F40)
 I (..\LwIP\src\include\lwip/arch.h)(0x5DD19F40)
 I (..\LwIP\system\arch/cc.h)(0x5DD19F40)
 I (..\LwIP\system\arch/cpu.h)(0x5DD19F40)
-I (../Inc/main.h)(0x5E332843)
+I (../Inc/main.h)(0x5E39B8AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5DD18420)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5E276C2E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5DD18420)
@@ -160,7 +162,8 @@ I (..\LwIP\src\include\lwip/lwip_timers.h)(0x5DD19F40)
 I (D:\Keil\ARM\ARMCC\include\inttypes.h)(0x5D9B3488)
 I (../Inc/app_ethernet.h)(0x5DD19F5A)
 I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (../Inc/tcp_echoserver.h)(0x5E33363B)
+I (../Inc/modbus_client.h)(0x5E33363B)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x5D9B3488)
 F (..\Src\enc28j60.c)(0x5DD19F4A)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\LwIP\system -I ..\LwIP\system\arch -I ..\LwIP\src\include -I ..\LwIP\src\include\ipv4 -I ..\LwIP\src\include\lwip -I ..\LwIP\src\include\netif -I ..\LwIP\src\include\posix -I ..\LwIP\src\include\posix\sys -I ..\LwIP\src\core-I.\RTE\_modbus_module-ID:\Keil\Package\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil\Package\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o modbus_module\enc28j60.o --omf_browse modbus_module\enc28j60.crf --depend modbus_module\enc28j60.d)
 I (../Inc/enc28j60.h)(0x5DD19F5A)
 I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
@@ -215,14 +218,14 @@ I (../Inc/ethernetif.h)(0x5DD19F5A)
 I (../Inc/enc28j60.h)(0x5DD19F5A)
 I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x5D9B3488)
 I (D:\Keil\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (../Inc/main.h)(0x5E332843)
+I (../Inc/main.h)(0x5E39B8AE)
 I (..\LwIP\src\include\lwip/init.h)(0x5DD19F40)
 I (D:\Keil\ARM\ARMCC\include\inttypes.h)(0x5D9B3488)
 I (../Inc/app_ethernet.h)(0x5DD19F5A)
 I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (../Inc/tcp_echoserver.h)(0x5E33363B)
-F (..\Src\main.c)(0x5E333642)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\LwIP\system -I ..\LwIP\system\arch -I ..\LwIP\src\include -I ..\LwIP\src\include\ipv4 -I ..\LwIP\src\include\lwip -I ..\LwIP\src\include\netif -I ..\LwIP\src\include\posix -I ..\LwIP\src\include\posix\sys -I ..\LwIP\src\core-I.\RTE\_modbus_module-ID:\Keil\Package\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil\Package\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o modbus_module\main.o --omf_browse modbus_module\main.crf --depend modbus_module\main.d)
-I (../Inc/main.h)(0x5E332843)
+I (../Inc/modbus_client.h)(0x5E33363B)
+F (..\Src\main.c)(0x5E39B8AE)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\LwIP\system -I ..\LwIP\system\arch -I ..\LwIP\src\include -I ..\LwIP\src\include\ipv4 -I ..\LwIP\src\include\lwip -I ..\LwIP\src\include\netif -I ..\LwIP\src\include\posix -I ..\LwIP\src\include\posix\sys -I ..\LwIP\src\core-I.\RTE\_modbus_module-ID:\Keil\Package\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil\Package\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o modbus_module\main.o --omf_browse modbus_module\main.crf --depend modbus_module\main.d)
+I (../Inc/main.h)(0x5E39B8AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5DD18420)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5E276C2E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5DD18420)
@@ -273,9 +276,9 @@ I (..\LwIP\src\include\lwip/lwip_timers.h)(0x5DD19F40)
 I (D:\Keil\ARM\ARMCC\include\inttypes.h)(0x5D9B3488)
 I (../Inc/app_ethernet.h)(0x5DD19F5A)
 I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (../Inc/tcp_echoserver.h)(0x5E33363B)
+I (../Inc/modbus_client.h)(0x5E33363B)
 I (D:\Keil\ARM\ARMCC\include\string.h)(0x5D9B3488)
-F (..\Src\tcp_echoserver.c)(0x5E331470)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\LwIP\system -I ..\LwIP\system\arch -I ..\LwIP\src\include -I ..\LwIP\src\include\ipv4 -I ..\LwIP\src\include\lwip -I ..\LwIP\src\include\netif -I ..\LwIP\src\include\posix -I ..\LwIP\src\include\posix\sys -I ..\LwIP\src\core-I.\RTE\_modbus_module-ID:\Keil\Package\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil\Package\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o modbus_module\tcp_echoserver.o --omf_browse modbus_module\tcp_echoserver.crf --depend modbus_module\tcp_echoserver.d)
+F (..\Src\modbus_client.c)(0x5E331470)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\LwIP\system -I ..\LwIP\system\arch -I ..\LwIP\src\include -I ..\LwIP\src\include\ipv4 -I ..\LwIP\src\include\lwip -I ..\LwIP\src\include\netif -I ..\LwIP\src\include\posix -I ..\LwIP\src\include\posix\sys -I ..\LwIP\src\core-I.\RTE\_modbus_module-ID:\Keil\Package\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil\Package\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o modbus_module\modbus_client.o --omf_browse modbus_module\modbus_client.crf --depend modbus_module\modbus_client.d)
 I (..\LwIP\src\include\lwip/debug.h)(0x5DD19F40)
 I (..\LwIP\src\include\lwip/arch.h)(0x5DD19F40)
 I (..\LwIP\system\arch/cc.h)(0x5DD19F40)
@@ -294,7 +297,7 @@ I (..\LwIP\src\include\lwip/def.h)(0x5DD19F40)
 I (..\LwIP\src\include\ipv4\lwip/ip_addr.h)(0x5DD19F40)
 I (..\LwIP\src\include\lwip/netif.h)(0x5DD19F40)
 I (..\LwIP\src\include\ipv4\lwip/icmp.h)(0x5DD19F40)
-I (../Inc/main.h)(0x5E332843)
+I (../Inc/main.h)(0x5E39B8AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5DD18420)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5E276C2E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5DD18420)
@@ -333,7 +336,8 @@ I (..\LwIP\src\include\lwip/lwip_timers.h)(0x5DD19F40)
 I (D:\Keil\ARM\ARMCC\include\inttypes.h)(0x5D9B3488)
 I (../Inc/app_ethernet.h)(0x5DD19F5A)
 I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (../Inc/tcp_echoserver.h)(0x5E33363B)
+I (../Inc/modbus_client.h)(0x5E33363B)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x5D9B3488)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c)(0x5DD18420)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\LwIP\system -I ..\LwIP\system\arch -I ..\LwIP\src\include -I ..\LwIP\src\include\ipv4 -I ..\LwIP\src\include\lwip -I ..\LwIP\src\include\netif -I ..\LwIP\src\include\posix -I ..\LwIP\src\include\posix\sys -I ..\LwIP\src\core-I.\RTE\_modbus_module-ID:\Keil\Package\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil\Package\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o modbus_module\stm32f1xx_hal_gpio_ex.o --omf_browse modbus_module\stm32f1xx_hal_gpio_ex.crf --depend modbus_module\stm32f1xx_hal_gpio_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5DD18420)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5E276C2E)
@@ -1058,7 +1062,7 @@ I (..\LwIP\src\include\lwip/dns.h)(0x5DD19F40)
 I (..\LwIP\src\include\lwip/timers.h)(0x5DD19F40)
 I (..\LwIP\src\include\netif/etharp.h)(0x5DD19F40)
 I (..\LwIP\src\include\lwip/api.h)(0x5DD19F40)
-I (../Inc/main.h)(0x5E332843)
+I (../Inc/main.h)(0x5E39B8AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5DD18420)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5E276C2E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5DD18420)
@@ -1095,7 +1099,8 @@ I (..\LwIP\src\include\lwip/lwip_timers.h)(0x5DD19F40)
 I (D:\Keil\ARM\ARMCC\include\inttypes.h)(0x5D9B3488)
 I (../Inc/app_ethernet.h)(0x5DD19F5A)
 I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (../Inc/tcp_echoserver.h)(0x5E33363B)
+I (../Inc/modbus_client.h)(0x5E33363B)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x5D9B3488)
 F (..\LwIP\src\core\mem.c)(0x5E0FA03C)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\LwIP\system -I ..\LwIP\system\arch -I ..\LwIP\src\include -I ..\LwIP\src\include\ipv4 -I ..\LwIP\src\include\lwip -I ..\LwIP\src\include\netif -I ..\LwIP\src\include\posix -I ..\LwIP\src\include\posix\sys -I ..\LwIP\src\core-I.\RTE\_modbus_module-ID:\Keil\Package\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil\Package\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o modbus_module\mem.o --omf_browse modbus_module\mem.crf --depend modbus_module\mem.d)
 I (..\LwIP\src\include\lwip/opt.h)(0x5DD19F40)
 I (../Inc/lwipopts.h)(0x5E0FA486)

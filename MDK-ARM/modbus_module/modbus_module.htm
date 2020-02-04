@@ -3,7 +3,7 @@
 <title>Static Call Graph - [modbus_module\modbus_module.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image modbus_module\modbus_module.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue Feb 04 18:34:49 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue Feb 04 19:32:33 2020
 <BR><P>
 <H3>Maximum Stack Usage =        492 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -109,11 +109,11 @@ Function Pointers
  <LI><a href="#[50]">low_level_output</a> from ethernetif.o(i.low_level_output) referenced from ethernetif.o(i.ethernetif_init)
  <LI><a href="#[46]">main</a> from main.o(i.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
  <LI><a href="#[59]">tcp_accept_null</a> from tcp.o(i.tcp_accept_null) referenced from tcp.o(i.tcp_listen_with_backlog)
- <LI><a href="#[57]">tcp_echoserver_accept</a> from tcp_echoserver.o(i.tcp_echoserver_accept) referenced from tcp_echoserver.o(i.tcp_echoserver_init)
- <LI><a href="#[55]">tcp_echoserver_error</a> from tcp_echoserver.o(i.tcp_echoserver_error) referenced from tcp_echoserver.o(i.tcp_echoserver_accept)
- <LI><a href="#[56]">tcp_echoserver_poll</a> from tcp_echoserver.o(i.tcp_echoserver_poll) referenced from tcp_echoserver.o(i.tcp_echoserver_accept)
- <LI><a href="#[54]">tcp_echoserver_recv</a> from tcp_echoserver.o(i.tcp_echoserver_recv) referenced from tcp_echoserver.o(i.tcp_echoserver_accept)
- <LI><a href="#[58]">tcp_echoserver_sent</a> from tcp_echoserver.o(i.tcp_echoserver_sent) referenced from tcp_echoserver.o(i.tcp_echoserver_recv)
+ <LI><a href="#[57]">tcp_echoserver_accept</a> from modbus_client.o(i.tcp_echoserver_accept) referenced from modbus_client.o(i.tcp_echoserver_init)
+ <LI><a href="#[55]">tcp_echoserver_error</a> from modbus_client.o(i.tcp_echoserver_error) referenced from modbus_client.o(i.tcp_echoserver_accept)
+ <LI><a href="#[56]">tcp_echoserver_poll</a> from modbus_client.o(i.tcp_echoserver_poll) referenced from modbus_client.o(i.tcp_echoserver_accept)
+ <LI><a href="#[54]">tcp_echoserver_recv</a> from modbus_client.o(i.tcp_echoserver_recv) referenced from modbus_client.o(i.tcp_echoserver_accept)
+ <LI><a href="#[58]">tcp_echoserver_sent</a> from modbus_client.o(i.tcp_echoserver_sent) referenced from modbus_client.o(i.tcp_echoserver_recv)
  <LI><a href="#[53]">tcp_recv_null</a> from tcp.o(i.tcp_recv_null) referenced from tcp.o(i.tcp_alloc)
  <LI><a href="#[5a]">tcpip_tcp_timer</a> from timers.o(i.tcpip_tcp_timer) referenced from timers.o(i.tcp_timer_needed)
  <LI><a href="#[5a]">tcpip_tcp_timer</a> from timers.o(i.tcpip_tcp_timer) referenced from timers.o(i.tcpip_tcp_timer)
@@ -1787,7 +1787,7 @@ Global Symbols
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_recv_null
 </UL>
 
-<P><STRONG><a name="[10e]"></a>tcp_echoserver_init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, tcp_echoserver.o(i.tcp_echoserver_init))
+<P><STRONG><a name="[10e]"></a>tcp_echoserver_init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, modbus_client.o(i.tcp_echoserver_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 380<LI>Call Chain = tcp_echoserver_init &rArr; tcp_new &rArr; tcp_alloc &rArr; tcp_abort &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_new
@@ -2333,19 +2333,19 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[116]"></a>compute_response_length</STRONG> (Thumb, 138 bytes, Stack size 12 bytes, tcp_echoserver.o(i.compute_response_length))
+<P><STRONG><a name="[116]"></a>compute_response_length</STRONG> (Thumb, 138 bytes, Stack size 12 bytes, modbus_client.o(i.compute_response_length))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = compute_response_length
 </UL>
 <BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;modbusfunction
 </UL>
 
-<P><STRONG><a name="[117]"></a>error_appears</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, tcp_echoserver.o(i.error_appears))
+<P><STRONG><a name="[117]"></a>error_appears</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, modbus_client.o(i.error_appears))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = error_appears
 </UL>
 <BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;modbusfunction
 </UL>
 
-<P><STRONG><a name="[115]"></a>modbusfunction</STRONG> (Thumb, 832 bytes, Stack size 40 bytes, tcp_echoserver.o(i.modbusfunction))
+<P><STRONG><a name="[115]"></a>modbusfunction</STRONG> (Thumb, 832 bytes, Stack size 40 bytes, modbus_client.o(i.modbusfunction))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = modbusfunction &rArr; compute_response_length
 </UL>
 <BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;error_appears
@@ -2354,7 +2354,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_echoserver_recv
 </UL>
 
-<P><STRONG><a name="[57]"></a>tcp_echoserver_accept</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, tcp_echoserver.o(i.tcp_echoserver_accept))
+<P><STRONG><a name="[57]"></a>tcp_echoserver_accept</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, modbus_client.o(i.tcp_echoserver_accept))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = tcp_echoserver_accept &rArr; tcp_echoserver_connection_close &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_setprio
@@ -2365,9 +2365,9 @@ Local Symbols
 <LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_malloc
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_echoserver_connection_close
 </UL>
-<BR>[Address Reference Count : 1]<UL><LI> tcp_echoserver.o(i.tcp_echoserver_init)
+<BR>[Address Reference Count : 1]<UL><LI> modbus_client.o(i.tcp_echoserver_init)
 </UL>
-<P><STRONG><a name="[132]"></a>tcp_echoserver_connection_close</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, tcp_echoserver.o(i.tcp_echoserver_connection_close))
+<P><STRONG><a name="[132]"></a>tcp_echoserver_connection_close</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, modbus_client.o(i.tcp_echoserver_connection_close))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = tcp_echoserver_connection_close &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_sent
@@ -2384,23 +2384,23 @@ Local Symbols
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_echoserver_accept
 </UL>
 
-<P><STRONG><a name="[55]"></a>tcp_echoserver_error</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, tcp_echoserver.o(i.tcp_echoserver_error))
+<P><STRONG><a name="[55]"></a>tcp_echoserver_error</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, modbus_client.o(i.tcp_echoserver_error))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = tcp_echoserver_error &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_free
 </UL>
-<BR>[Address Reference Count : 1]<UL><LI> tcp_echoserver.o(i.tcp_echoserver_accept)
+<BR>[Address Reference Count : 1]<UL><LI> modbus_client.o(i.tcp_echoserver_accept)
 </UL>
-<P><STRONG><a name="[56]"></a>tcp_echoserver_poll</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, tcp_echoserver.o(i.tcp_echoserver_poll))
+<P><STRONG><a name="[56]"></a>tcp_echoserver_poll</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, modbus_client.o(i.tcp_echoserver_poll))
 <BR><BR>[Stack]<UL><LI>Max Depth = 356<LI>Call Chain = tcp_echoserver_poll &rArr; tcp_abort &rArr; tcp_abandon &rArr; tcp_pcb_remove &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_abort
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_echoserver_send
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_echoserver_connection_close
 </UL>
-<BR>[Address Reference Count : 1]<UL><LI> tcp_echoserver.o(i.tcp_echoserver_accept)
+<BR>[Address Reference Count : 1]<UL><LI> modbus_client.o(i.tcp_echoserver_accept)
 </UL>
-<P><STRONG><a name="[54]"></a>tcp_echoserver_recv</STRONG> (Thumb, 152 bytes, Stack size 24 bytes, tcp_echoserver.o(i.tcp_echoserver_recv))
+<P><STRONG><a name="[54]"></a>tcp_echoserver_recv</STRONG> (Thumb, 152 bytes, Stack size 24 bytes, modbus_client.o(i.tcp_echoserver_recv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 348<LI>Call Chain = tcp_echoserver_recv &rArr; tcp_echoserver_send &rArr; tcp_recved &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
@@ -2411,9 +2411,9 @@ Local Symbols
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_echoserver_connection_close
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;modbusfunction
 </UL>
-<BR>[Address Reference Count : 1]<UL><LI> tcp_echoserver.o(i.tcp_echoserver_accept)
+<BR>[Address Reference Count : 1]<UL><LI> modbus_client.o(i.tcp_echoserver_accept)
 </UL>
-<P><STRONG><a name="[138]"></a>tcp_echoserver_send</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, tcp_echoserver.o(i.tcp_echoserver_send))
+<P><STRONG><a name="[138]"></a>tcp_echoserver_send</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, modbus_client.o(i.tcp_echoserver_send))
 <BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = tcp_echoserver_send &rArr; tcp_recved &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pbuf_free
@@ -2426,13 +2426,13 @@ Local Symbols
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_echoserver_poll
 </UL>
 
-<P><STRONG><a name="[58]"></a>tcp_echoserver_sent</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, tcp_echoserver.o(i.tcp_echoserver_sent))
+<P><STRONG><a name="[58]"></a>tcp_echoserver_sent</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, modbus_client.o(i.tcp_echoserver_sent))
 <BR><BR>[Stack]<UL><LI>Max Depth = 332<LI>Call Chain = tcp_echoserver_sent &rArr; tcp_echoserver_send &rArr; tcp_recved &rArr; tcp_output &rArr; tcp_send_empty_ack &rArr; ip_output &rArr; ip_output_if &rArr; ip_frag &rArr; pbuf_alloc &rArr; pbuf_free &rArr; mem_free &rArr; plug_holes
 </UL>
 <BR>[Calls]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_echoserver_send
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_echoserver_connection_close
 </UL>
-<BR>[Address Reference Count : 1]<UL><LI> tcp_echoserver.o(i.tcp_echoserver_recv)
+<BR>[Address Reference Count : 1]<UL><LI> modbus_client.o(i.tcp_echoserver_recv)
 </UL>
 <P><STRONG><a name="[8a]"></a>SPI_CheckFlag_BSY</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, stm32f1xx_hal_spi.o(i.SPI_CheckFlag_BSY))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = SPI_CheckFlag_BSY &rArr; SPI_WaitFlagStateUntilTimeout

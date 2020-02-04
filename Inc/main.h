@@ -39,7 +39,9 @@ extern "C" {
 #include "inttypes.h"
 #include "app_ethernet.h"
 #include "stdlib.h"
-#include "tcp_echoserver.h"
+#include "modbus_client.h"
+#include <string.h>
+#include <stdlib.h>
 
 
 /* Exported types ------------------------------------------------------------*/

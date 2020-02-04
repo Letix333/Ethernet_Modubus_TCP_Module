@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ..\LwIP\system -I ..\LwIP\system\arch -I ..\LwIP\src\include -I ..\LwIP\src\include\ipv4 -I ..\LwIP\src\include\lwip -I ..\LwIP\src\include\netif -I ..\LwIP\src\include\posix -I ..\LwIP\src\include\posix\sys -I ..\LwIP\src\core
+-I.\RTE\_modbus_module
+-ID:\Keil\Package\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+-ID:\Keil\Package\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE
+-o modbus_module\tcp_echoserver.o --omf_browse modbus_module\tcp_echoserver.crf --depend modbus_module\tcp_echoserver.d "..\Src\tcp_echoserver.c"

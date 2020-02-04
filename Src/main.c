@@ -20,16 +20,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "lwip/opt.h"
-#include "lwip/init.h"
-#include "lwip/netif.h"
-#include "netif/etharp.h"
-#include "lwip/lwip_timers.h"
-#include "ethernetif.h"
-#include "app_ethernet.h"
-#include "tcp_echoserver.h"
-#include <string.h>
-#include <stdlib.h>
+
 
 SPI_HandleTypeDef hspi2;
 TIM_HandleTypeDef tim2;

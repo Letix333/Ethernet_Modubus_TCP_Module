@@ -423,9 +423,9 @@
               <FilePath>..\Src\main.c</FilePath>
             </File>
             <File>
-              <FileName>tcp_echoserver.c</FileName>
+              <FileName>modbus_client.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Src\tcp_echoserver.c</FilePath>
+              <FilePath>..\Src\modbus_client.c</FilePath>
             </File>
           </Files>
         </Group>
